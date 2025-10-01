@@ -1,4 +1,10 @@
+import { NavBar } from "./components/NavBar"
+import { StarBackground } from "./components/StarBackground"
 import ThemeToggle from "./components/ThemeToggle"
+import { Hero } from "./components/Hero"
+import { AboutMe } from "./components/AboutMe"
+import { Skills } from "./components/Skills"
+import { Projects } from "./components/Projects"
 
 function App() {
 
@@ -7,10 +13,17 @@ function App() {
       {/* Theme Toggle */}
       <ThemeToggle />
       {/* Background Effects */}
+      <StarBackground />
       {/* Navbar */}
+      <NavBar />
       {/* Main Content */}
+      <main>
+        <Hero />
+        <AboutMe />
+        <Skills />
+        <Projects />
+      </main>
       {/* Footer */}
-      <h1>HomePage</h1>
     </div>
   )
 }
