@@ -5,9 +5,9 @@ const projects = [
         id: 1,
         title: "Stepquest",
         description: "An app using javascript",
-        image: "",
+        image: "public/projects/stepquest_homepage.png",
         tags: ["Javascript", "NodeJs", "MongoDB"],
-        githubUrl: "",
+        githubUrl: "https://github.com/theokyle/stepQuest",
         demoUrl: ""
     },
     {
