@@ -1,5 +1,4 @@
 import { Linkedin, Mail, MapPin, Send } from "lucide-react";
-import { cn } from "../lib/util";
 
 
 export function Contact() {
@@ -14,42 +13,48 @@ export function Contact() {
             </p>
 
             <div className="container mx-auto">
-                <div className="space-y-8">
-                    <div className="space-y-6 justify-center">
-                        <div className="flex justify-center space-x-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                            <Mail />
-                            </div>
-                            <div>
-                                <h4 className="font-medium">Email</h4>
-                                <a href="mailto:theokyle@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">theokyle@gmail.com</a>
-                            </div>
-                        </div>
+            <div className="flex flex-col items-center space-y-6">
+                <div className="flex flex-col space-y-6">
+                {/* Contact Item */}
+                <div className="flex items-center space-x-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                    <Mail />
                     </div>
-                    <div className="space-y-6 justify-center">
-                        <div className="flex justify-center space-x-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                            <MapPin />
-                            </div>
-                            <div>
-                                <h4 className="font-medium">Location</h4>
-                                <p className="text-muted-foreground hover:text-primary transition-colors">St. Louis, Mo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="space-y-6 justify-center">
-                        <div className="flex justify-center space-x-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                            <a href="https://www.linkedin.com/in/kyle-butler-438263195">
-                            <Linkedin />
-                            </a>
-                            </div>
-                            <div>
-                                <h4 className="font-medium">LinkedIn</h4>
-                            </div>
-                        </div>
+                    <div className="flex flex-col items-center w-full">
+                        <h4 className="font-medium">Email</h4>
+                        <a
+                            href="mailto:theokyle@gmail.com"
+                            className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                            theokyle@gmail.com
+                        </a>
                     </div>
                 </div>
+
+                {/* Location Item */}
+                <div className="flex items-center space-x-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                    <MapPin />
+                    </div>
+                    <div className="flex flex-col items-center w-full">
+                        <h4 className="font-medium">Location</h4>
+                        <p className="text-muted-foreground">St. Louis, MO</p>
+                    </div>
+                </div>
+
+                {/* LinkedIn Item */}
+                <div className="flex items-center space-x-4">
+                    <div className="p-3 rounded-full bg-primary/10">
+                    <a href="https://www.linkedin.com/in/kyle-butler-438263195">
+                        <Linkedin />
+                    </a>
+                    </div>
+                    <div className="flex flex-col items-center w-full">
+                        <h4 className="font-medium">LinkedIn</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
             </div>
         </section>
     )
