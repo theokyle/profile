@@ -13,7 +13,7 @@ export function Hero() {
                     </h1>
                 </div>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am a self-taught developer with experience in JavaScript, Node/Express, React, and Go focused on creating stellar full-stack applications.
+                    I am a developer with experience in JavaScript, Node/Express, and React focused on creating stellar full-stack applications.
                 </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                     <a href="#projects" className="cosmic-button">

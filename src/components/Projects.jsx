@@ -5,16 +5,16 @@ const projects = [
         id: 1,
         title: "Stepquest",
         description: "An app using javascript",
-        image: "",
+        image: "public/projects/stepquest_homepage.png",
         tags: ["Javascript", "NodeJs", "MongoDB"],
-        githubUrl: "",
+        githubUrl: "https://github.com/theokyle/stepQuest",
         demoUrl: ""
     },
     {
         id: 2,
         title: "Primal Tracker",
         description: "An app using React",
-        image: "",
+        image: "public/projects/primal_homepage.png",
         tags: ["React", "Tailwind", "MongoDB"],
         githubUrl: "",
         demoUrl: ""
@@ -33,9 +33,9 @@ export function Projects() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, key) => (
-                        <div key={key} className="group bg-card rounded -lg overflow-hidden shadow-xs card-hover">
+                        <div key={key} className="group bg-card rounded -lg overflow-hidden shadow-xs card-hover p-2">
                             <div className="h-48 overflow-hidden">
-                                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                <img src={project.image} alt={project.title} className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" />
                                 </div>
                                 <div className="p-6">
                                     <div className="flex flex-wrap gap-2 mb-4">
@@ -64,7 +64,7 @@ export function Projects() {
                     ))}
                 </div>
                 <div className="text-center mt-12">
-                    <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/theokyle">Check out my github profile <ArrowRight size={16} /></a>
+                    <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/theokyle" target="_blank">Check out my github profile <ArrowRight size={16} /></a>
                 </div>
             </div>
         </section>

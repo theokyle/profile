@@ -13,11 +13,11 @@ const skills = [
     {name: "PostgreSQL", level: 95, category: "backend"},
     {name: "GoLang", level: 95, category: "backend"},
 
-    {name: "Git/Github", level: 95, category: "tools"},
-    {name: "Agile", level: 95, category: "tools"},
+    {name: "Git/Github", level: 95, category: "project management"},
+    {name: "Agile", level: 95, category: "project management"},
 ]
 
-const categories = ["all", "frontend", "backend", "tools"]
+const categories = ["all", "frontend", "backend", "project management"]
 
 export function Skills() {
     const [activeCategory, setActiveCategory] = useState("all")
@@ -46,16 +46,9 @@ export function Skills() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredSkills.map((skill, key) => (
                     <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
-                        <div className="text-left mb-4">
+                        <div className="text-center">
                             <h3 className="font-semibold text-lg">{skill.name}</h3>
                         </div>
-                        <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                            <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out" 
-                            style={{width: skill.level + "%" }} />
-                        </div>
-                        <div className="text-right mt-1">
-                            <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                            </div>
                     </div>
                 ))}
             </div>
