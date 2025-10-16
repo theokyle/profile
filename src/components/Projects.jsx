@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Stepquest",
         description: "An app using javascript",
-        image: "public/projects/stepquest_homepage.png",
+        image: "/projects/stepquest_homepage.png",
         tags: ["Javascript", "NodeJs", "MongoDB"],
         githubUrl: "https://github.com/theokyle/stepQuest",
         demoUrl: ""
@@ -14,7 +14,7 @@ const projects = [
         id: 2,
         title: "Primal Tracker",
         description: "An app using React",
-        image: "public/projects/primal_homepage.png",
+        image: "/projects/primal_homepage.png",
         tags: ["React", "Tailwind", "MongoDB"],
         githubUrl: "",
         demoUrl: ""
