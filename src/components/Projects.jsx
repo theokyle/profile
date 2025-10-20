@@ -4,16 +4,16 @@ const projects = [
     {
         id: 1,
         title: "Stepquest",
-        description: "An app using javascript",
+        description: "This app allows users to input daily distance walked to travel virtual journeys. This app was built as a capstone project for the Savvy Coders bootcamp. Built as a SPA using Javascript and Navigo with Express and MongoDB backend.",
         image: "/projects/stepquest_homepage.png",
         tags: ["Javascript", "NodeJs", "MongoDB"],
         githubUrl: "https://github.com/theokyle/stepQuest",
-        demoUrl: ""
+        demoUrl: "https://queststep.netlify.app/"
     },
     {
         id: 2,
         title: "Primal Tracker",
-        description: "An app using React",
+        description: "An app to track campaign progress for the boardgame 'Primal: The Awakening' by Reggie Games. Uses React, Tailwind CSS, Node/Express, and MongoDB",
         image: "/projects/primal_homepage.png",
         tags: ["React", "Tailwind", "MongoDB"],
         githubUrl: "",
@@ -52,9 +52,10 @@ export function Projects() {
                             <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                             <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
+                                    {project.demoUrl ?
                                     <a href={project.demoUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <ExternalLink size={20} />
-                                    </a>
+                                    </a> : ""}
                                     <a href={project.githubUrl} target="_blank" className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                         <Github size={20} />
                                     </a>
