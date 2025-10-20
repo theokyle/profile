@@ -2,19 +2,20 @@ import { useState } from "react";
 import { cn } from "../lib/util";
 
 const skills = [
-    {name: "HTML/CSS", level: 95, category: "frontend"},
-    {name: "Javascript", level: 90, category: "frontend"},
-    {name: "React", level: 95, category: "frontend"},
-    {name: "Tailwind CSS", level: 95, category: "frontend"},
+    {name: "HTML/CSS", category: "frontend"},
+    {name: "Javascript", category: "frontend"},
+    {name: "React", category: "frontend"},
+    {name: "Tailwind CSS", category: "frontend"},
 
-    {name: "Node.js", level: 95, category: "backend"},
-    {name: "Express", level: 95, category: "backend"},
-    {name: "MongoDB", level: 95, category: "backend"},
-    {name: "PostgreSQL", level: 95, category: "backend"},
-    {name: "GoLang", level: 95, category: "backend"},
+    {name: "Node.js", category: "backend"},
+    {name: "Express", category: "backend"},
+    {name: "MongoDB", category: "backend"},
+    {name: "PostgreSQL", category: "backend"},
+    {name: "GoLang", category: "backend"},
 
-    {name: "Git/Github", level: 95, category: "project management"},
-    {name: "Agile", level: 95, category: "project management"},
+    {name: "Git/Github", category: "project management"},
+    {name: "Linux/Ubuntu", category: "project management"},
+    {name: "Agile", category: "project management"},
 ]
 
 const categories = ["all", "frontend", "backend", "project management"]

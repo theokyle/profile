@@ -50,7 +50,9 @@ export function Contact() {
                     </a>
                     </div>
                     <div className="flex flex-col items-center w-full">
-                        <h4 className="font-medium">LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/kyle-butler-438263195" target="_blank">
+                            <h4 className="font-medium">LinkedIn</h4>
+                            </a>
                     </div>
                 </div>
                 </div>
