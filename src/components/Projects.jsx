@@ -12,11 +12,20 @@ const projects = [
     },
     {
         id: 2,
+        title: "Pysteroids",
+        description: "A simple Asteroids clone built with Python and Pygame. Shoot asteroids, avoid collisions, and try to survive as long as possible!",
+        image: "/projects/pysteroids.png",
+        tags: ["Python"],
+        githubUrl: "https://github.com/theokyle/pysteroids",
+        demoUrl: ""
+    },
+    {
+        id: 3,
         title: "Primal Tracker",
         description: "An app to track campaign progress for the boardgame 'Primal: The Awakening' by Reggie Games. Uses React, Tailwind CSS, Node/Express, and MongoDB",
         image: "/projects/primal_homepage.png",
         tags: ["React", "Tailwind", "MongoDB"],
-        githubUrl: "",
+        githubUrl: "https://github.com/theokyle/primal_tracker",
         demoUrl: ""
     }
 ]
